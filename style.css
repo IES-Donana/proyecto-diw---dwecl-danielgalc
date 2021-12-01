@@ -23,10 +23,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 79.95em;
   height: 7em;  
   margin-top: -1em;
-  background: rgb(165, 72, 72);
+  background: #000;
 }
 
 img{
@@ -185,13 +185,13 @@ footer{
   display: flex;
   flex-direction: row;
   background-color: #000;
-  width: 100%;
+  width: 79.95em;
   height: 10em;
-  margin: 10em 0 0 0;
+  margin: 7em 0 0 0;
+  bottom: -10px;
 }
 
 footer div:nth-child(1){
-  display: flex;
   justify-content: center;
   width: 25%;
   height: calc(100% - 2px);
@@ -202,7 +202,7 @@ footer div:nth-child(1){
 
   color: #FFFFFF;
   font-family: Roboto;
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 #colores{
@@ -231,14 +231,13 @@ footer div:nth-child(1){
 }
 
 #fuentes{
-  width: 25%;
+  width: 19.95em;
   height: calc(100% + 8px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: #FFFFFF;
-
 }
 
 #fuentes h2, #rob-reg, #rob-bold{
@@ -256,6 +255,7 @@ footer div:nth-child(1){
 footer div:nth-child(4){
   width: 25%;
   color: #FFFFFF;
+  font-size: 1em;
   font-family: Roboto;
   padding: 5px;
 }
