@@ -1,11 +1,11 @@
 @font-face {
   font-family: Oswald;
-  src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
 }
 
 * {
@@ -122,7 +122,9 @@ li {
 /* BODY, MAIN, MAIN TEXT */
 
 body{
+  height: calc(100% - 200px);
   background-color: #0A0A0A;
+  margin-bottom: 0px;
 }
 
 main{
@@ -175,7 +177,7 @@ main{
   background: #F93943;
 }
 
-#boton:active{
+#boton:active, #ver-mas:active{
   background-color: #FFFFFF;
 }
 
@@ -260,4 +262,164 @@ footer div:nth-child(4){
   padding: 5px;
 }
 
+/* MIS PROYECTOS */
 
+h2{
+  display: flex;
+  color: #FFFFFF;
+  font-family: Oswald;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2em;
+}
+
+.impar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+
+#proyecto{
+  width: 25em;
+  height: 15em;
+  margin: 0em 5em;
+}
+
+
+.impar div {
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 1em;
+  font-family: Roboto;
+}
+
+#mostrar{
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Oswald;
+  margin-top: 5em;
+}
+
+#show{
+  display: none;
+}
+
+div#testImpar {
+	display:none;
+  padding:10px;
+  width:25em;
+  height: 10em;
+  cursor:pointer;
+/*   border: #FFFFFF 1px solid;
+ */}
+
+input#show:checked ~ div#testImpar {
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 78em;
+}
+
+div#testImpar p, div#testPar p{
+  color: #FFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 0.8em;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+div#citas{
+/*   border: 1px solid #FFFFFF;
+ */  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#testImpar img{
+  height: 12em;
+  width: 25em;
+  min-width:25em;
+  margin-left: 12em;
+}
+
+h4{
+  color: white;
+  font-family: Oswald;
+  text-decoration: underline;
+}
+
+hr{
+  margin-top: 2em;
+  background-color:#F93943;
+  height: 1px;
+}
+
+.par{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+
+.par div{
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 1em;
+  font-family: Roboto;
+}
+
+div#testPar {
+  display:none;
+  padding:10px;
+  width:25em;
+  height: 10em;
+  cursor:pointer;
+}
+
+input#show:checked ~ div#testPar {
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 78em;
+}
+
+div#testPar img{
+  height: 12em;
+  width: 25em;
+  min-width:25em;
+  margin-left: 12em;
+}
+
+#ver-mas{
+  display: flex;
+  width: 6em;
+  height: 1.5em;
+  margin-top: 0.4em;  
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  justify-content: center;
+
+  border: none;
+
+  background: #F93943;
+}
+
+#vMas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

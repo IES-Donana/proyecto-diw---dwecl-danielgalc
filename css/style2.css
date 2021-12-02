@@ -1,0 +1,218 @@
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* HEADER, LOGO, NAV */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79.95em;
+  height: 7em;  
+  margin-top: -1em;
+  background: #000;
+}
+
+img{
+  width: 5em;
+  height: 5em;
+}
+
+#logo{
+  padding-top: 1em;
+}
+
+nav{
+  display: flex;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.home{
+  height: 1em;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#x{
+  border-bottom: 2px solid #F93943;
+  padding-left: 2px;
+}
+
+li {
+  margin: 2em;
+}
+
+.mis-Proy{
+  width: 287px;
+  height: 71px;
+  left: 530px;
+  top: 19px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 71px;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sobre-Mi{
+  width: 173px;
+  height: 71px;
+  left: 914px;
+  top: 19px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 71px;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contacto{
+  width: 191px;
+  height: 71px;
+  left: 1184px;
+  top: 19px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 71px;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* BODY */
+
+body{
+  background-color: #0A0A0A;
+}
+
+/* SOBRE MÍ */
+
+#info-personal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  display: flex;
+  color: #FFFFFF;
+  font-family: Oswald;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2em;
+}
+
+#proyecto{
+  width: 25em;
+  max-width: 25em;
+  height: 15em;
+  max-height: 25em;
+  margin: 5em 5em;
+}
+
+
+#info-personal div {
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 1.2em;
+  font-family: Roboto;
+}
+
+#info-pro{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5em;
+}
+
+#circulo1, #circulo2, #circulo3{
+  display: flex;
+  width: 9em;
+  height: 9em;
+  background-color: #F93943;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald;
+}
+
+#parrafos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: Roboto;
+  color: white;
+}
+
+#parrafos p:nth-child(1){
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3em;
+  margin-top: 1em;
+}
+
+#parrafos p:nth-child(2){
+  display: flex;
+  flex-wrap: wrap;
+  width: 10em;
+  margin-left: -4em;
+  align-items: center;
+  justify-content: center;
+}
+
+#parrafos p:nth-child(3){
+  display: flex;
+  flex-wrap: wrap;
+  width: 20em;
+  align-items: center;
+  justify-content: center;
+  margin-left: -3em;
+  margin-top: 1em;
+}
