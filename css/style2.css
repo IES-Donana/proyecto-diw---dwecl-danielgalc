@@ -222,13 +222,13 @@ h2{
 #cuerpo div#telefono{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 45em;
   height: 15em;
 
-/*   border: 1px solid white; */  
+  border: 1px solid white; 
   font-family: Oswald;
   color: #F93943;
   stroke: #FFFFFF 1px solid;
@@ -245,7 +245,7 @@ h2{
 }
 
 #cuerpo div#redes{
-  width: 100%;
+  width: 45em;
 
   display: flex;
   flex-direction: row;  
@@ -258,17 +258,28 @@ h2{
 div#formulario{
   color : white;
   border: 1px solid white;
-
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 49em;
+
+  margin-left: 5em;
 
   font-family: Roboto;
 }
 
-div#cuerpo{
+div#formulario p{
   display: flex;
+  align-items: center;
+  justify-content: center;
   
+  height: 5em;
+  margin-top: 0.8em;
+  margin-left: 3em;
+  margin-bottom: 1.5em;
+}
+
+div#cuerpo{
+  display: flex;  
 }
 
 #cuerpo div{
@@ -281,16 +292,49 @@ div#cuerpo{
 /*   border: 1px solid white;
  */}
 
- input {
-   height: 2em;
-   border: 2px #F93943 solid;
-   margin-bottom: 1em;
- }
-
- textarea {
+input {
+  width: 20em;
+  height: 2em;
   border: 2px #F93943 solid;
   margin-bottom: 1em;
- }
 
+
+}
+
+textarea {
+  border: 2px #F93943 solid;
+  margin-bottom: 1em;
+  width: 20em;
+}
+
+label{
+  left: 2em;
+}
+
+
+/* Boton */
+
+#boton{
+  display: flex;
+  width: 278px;
+  height: 64px;
+  margin-top: 30px;
+  
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 62px;
+  justify-content: center;
+
+  border: none;
+
+  background: #F93943;
+}
+
+#boton:active, #ver-mas:active{
+  background-color: #FFFFFF;
+}
 
 
