@@ -72,48 +72,30 @@ li {
 }
 
 .mis-Proy{
-  width: 287px;
-  height: 71px;
-  left: 530px;
-  top: 19px;
-
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 71px;
+  font-size: 3em;
 
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .sobre-Mi{
-  width: 173px;
-  height: 71px;
-  left: 914px;
-  top: 19px;
-
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 71px;
+  font-size: 3em;
 
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .contacto{
-  width: 191px;
-  height: 71px;
-  left: 1184px;
-  top: 19px;
-
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 71px;
+  font-size: 3em;
 
   color: #FFFFFF;
   text-decoration: none;
@@ -122,9 +104,8 @@ li {
 /* BODY, MAIN, MAIN TEXT */
 
 body{
-  height: calc(100% - 200px);
   background-color: #0A0A0A;
-  margin-bottom: 0px;
+  margin-bottom: 0em;
 }
 
 main{
