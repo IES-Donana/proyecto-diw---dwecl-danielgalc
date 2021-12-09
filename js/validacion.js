@@ -39,14 +39,10 @@ function validar(e) {
       if(!confirm("¿Deseas enviar los datos introducidos en el formulario?")){
         e.preventDefault();
         console.log("El usuario eligió 'Cancelar'. El formulario no ha sido enviado.");
-        return true;
-    } else{
-        return false;
-      }    
-  }   else {    
-        alert("Complete los campos correctamente e inténtelo de nuevo.");
-        return false;
-      }
+    }  
+  } else {    
+      alert("Complete los campos correctamente e inténtelo de nuevo.");
+    }
 }
 
 /* Comprobamos que todos los campos salvo el area de texto cumplen los requisitos, y a partir de ahí habilitamos
@@ -60,6 +56,34 @@ function habilitarArea(e) {
     document.getElementById("txtArea").disabled = true;
   }
 }
+
+/* FUNCIONES DE ERROR */
+
+/* Funciones para crear el mensaje de error y para borrarlo respectivamente. */
+
+function error(elemento, id) {  
+  document.getElementById(id).innerHTML = elemento.validationMessage;
+}
+
+function borrarError(elemento, mensaje) {
+  document.getElementById(mensaje).innerHTML = "";
+}
+
+/* Función con "setCustomValidity" para crear mensajes de error personalizados. */
+
+// Comprobamos que el campo existe en el primer "If".
+// Comprobamos que el campo coincide con el patrón especificado en el segundo "If".
+
+function textoError(elemento) {  
+  if (elemento.validity.valueMissing){ 
+    elemento.setCustomValidity( "Error. El campo "+ elemento.id +" es obligatorio.");
+  }
+
+  if (elemento.validity.patternMismatch) {
+    elemento.setCustomValidity( "Debe introducir " + elemento.id + " con el formato correcto.");
+  }    
+}
+
 
 /* Validamos el campo "Nombre". Si no cumple los requisitos mostramos un error, 
 ** si los cumple borraríamos los posibles errores que hubieran aparecido con anterioridad. */
@@ -152,29 +176,4 @@ function correoShift(e) {
   } else {
     document.getElementById("errEmail").innerHTML = "";
   }
-}
-
-/* Funciones para crear el mensaje de error y para borrarlo respectivamente. */
-
-function error(elemento, id) {  
-  document.getElementById(id).innerHTML = elemento.validationMessage;
-}
-
-function borrarError(elemento, mensaje) {
-  document.getElementById(mensaje).innerHTML = "";
-}
-
-/* Función con "setCustomValidity" para crear mensajes de error personalizados. */
-
-// Comprobamos que el campo existe en el primer "If".
-// Comprobamos que el campo coincide con el patrón especificado en el segundo "If".
-
-function textoError(elemento) {  
-  if (elemento.validity.valueMissing){ 
-    elemento.setCustomValidity( "Error. El campo "+ elemento.id +" es obligatorio.");
-  }
-
-  if (elemento.validity.patternMismatch) {
-    elemento.setCustomValidity( "Debe introducir " + elemento.id + " con el formato correcto.");
-  }    
 }
