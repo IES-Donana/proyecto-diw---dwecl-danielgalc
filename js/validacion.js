@@ -84,6 +84,7 @@ function textoError(elemento) {
   }    
 }
 
+/* VALIDACIONES */
 
 /* Validamos el campo "Nombre". Si no cumple los requisitos mostramos un error, 
 ** si los cumple borraríamos los posibles errores que hubieran aparecido con anterioridad. */
