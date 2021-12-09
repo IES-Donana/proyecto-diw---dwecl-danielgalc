@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="js/burger.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mediaquery.css">  
+  <title>Home</title>
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div id="hamburguesa">
-      <img src="images/burger.png" alt="Icono menú hamburguesa">
-    </div>
-    <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
-    <nav>
-      <ul>
-        <li><a href="index.html" id="x" class="home">HOME</a></li>
-        <li><a href="misProyectos.html" class="mis-Proy">MIS PROYECTOS</a></li>
-        <li><a href="sobreMi.html" class="sobre-Mi">SOBRE MÍ</a></li>
-        <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
-      </ul>
-      
+<body class="bg-black" >
+  <header class="flex flex-row justify-center items-center border-b-2 border-red-500  w-full h-1/2 ">
+    <div><a href="index.html"><img src="images/logo.png" alt="" class="h-24 mr-16"></a></div>
+    <nav class="font-sans flex flex-row m-16 text-4xl font-bold">
+      <ul class="flex flex-row justify-between">
+        <li class="text-white border-b-2 border-red-500 mx-12"><a href="index.html">HOME</a></li>
+        <li class="text-white mx-12	"><a href="misProyectos.html" >MIS PROYECTOS</a></li>
+        <li class="text-white mx-12	"><a href="sobreMi.html">SOBRE MÍ</a></li>
+        <li class="text-white mx-12	"><a href="contacto.html" class="contacto">CONTACTO</a></li>
+      </ul>      
     </nav>
   </header>
   <main>
-    <div id="main-text">
+    <div class="font-sans border-2 border-red-500 h-80 text-white text-5xl w-9/12 mt-16 ml-40">
       ¡Bienvenido a mi portafolio! Mi nombre es Daniel Gallego, y soy diseñador web. Aquí podrás encontrar información
-      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo!
-      <a href="misProyectos.html"><button id="boton" >MIS PROYECTOS</button></a>
-    </div>
+      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo! <br>
+      <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-red-500 text-red-500 text-lg rounded-lg 
+      transition-colors duration-700 transform hover:bg-red-400 hover:text-gray-100 focus:border-4 
+      focus:border-red-300 mt-12 ml-4">MIS PROYECTOS</button>
+     </div>
+    
   </main>
-  <footer>
-    <div>Muchas gracias por visitar mi perfil, lo he pasado genial creando este sitio web.
-      Aquí tienes todos los recursos y fuentes que he usado durante la creación de este proyecto.
+  <footer class="font-sans flex flex-row text-white text-2xl mt-16 justify-between">
+    <div class="font-sans w-1/4 ml-2 mb-2">Muchas gracias por visitar mi perfil, lo he pasado genial creando este sitio web.
+      Aquí tienes todos los colores y fuentes que he usado durante la creación de este proyecto.
     </div>
     <div id="colores">
-      <h2 id="x">Colores</h2>
+      <h2 id="x" class="font-sans font-bold flex border-b-2 w-1/2 border-red-500">Colores</h2>
       <br>
-      <span id="red-salsa">F93943</span><br><span id="blacks">#000 & #0A0A0A</span><br><span id="white">#FFF</span>
+      <span id="red-salsa" class="-mt-90">F93943</span><br>
+      <span id="blacks" class="-mt-90">#000 & #0A0A0A</span><br>
+      <span id="white" class="-mt-8">#FFF</span>
     </div>
-    <div id="fuentes">
-      <h2 id="x">Fuentes</h2>
+    <div id="fuentes" class="flex flex-col justify-center">
+      <h2 id="x" class="font-sans font-bold flex mb-8 -mt-10 border-b-2 w-1/2 border-red-500">Fuentes</h2>
       <br>
-      <span id="osw-reg">Oswald (Regular)</span><br><span id="rob-reg">Roboto (Regular)</span>
-      <br><span id="rob-bold">Roboto (Bold)</span>
+      <span id="osw-reg" class="-mt-9">Oswald (Regular)</span><br>
+      <span id="rob-reg" class="-mt-8">Roboto (Regular)</span><br>
+      <span id="rob-bold" class="-mt-8 font-bold font-sans">Roboto (Bold)</span>
     </div>
-    <div>
+    <div class="w-1/4">
       Sientete totalmente libre de contactarme para cualquier cosa que necesites. ¡Espero tu mensaje!
-
-      <a href="contacto.html"><button id="boton-contacto">¡CONTÁCTAME!</button></a>
+      <br>
+      <a href="contacto.html"><button class="p-2 pl-5 pr-5 bg-transparent border-2 border-red-500 text-red-500 text-lg rounded-lg 
+        transition-colors duration-700 transform hover:bg-red-400 hover:text-gray-100 focus:border-4 
+        focus:border-red-300 mt-4">CONTÁCTAME</button></a>
     </div>
   </footer>
 </body>
