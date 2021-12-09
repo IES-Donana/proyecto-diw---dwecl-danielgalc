@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/burger.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaquery.css">  
 </head>
 <body>
   <header>
-    <div id="logo"><img src="images/logo.png" alt=""></div>
+    <div id="hamburguesa">
+      <img src="images/burger.png" alt="Icono menú hamburguesa">
+    </div>
+    <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
     <nav>
       <ul>
         <li><a href="index.html" id="x" class="home">HOME</a></li>
@@ -22,8 +27,8 @@
   </header>
   <main>
     <div id="main-text">
-      ¡Bienvenido a mi portafolio! Mi nombre es Daniel Gallego, <br> y soy diseñador web. Aquí podrás encontrar información
-      sobre mí, mis proyectos, y las formas de contactarme. <br> ¡Echa un ojo!
+      ¡Bienvenido a mi portafolio! Mi nombre es Daniel Gallego, y soy diseñador web. Aquí podrás encontrar información
+      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo!
       <a href="misProyectos.html"><button id="boton" >MIS PROYECTOS</button></a>
     </div>
   </main>
@@ -45,7 +50,7 @@
     <div>
       Sientete totalmente libre de contactarme para cualquier cosa que necesites. ¡Espero tu mensaje!
 
-      <a href="contacto.html"><button id="boton">¡CONTÁCTAME!</button></a>
+      <a href="contacto.html"><button id="boton-contacto">¡CONTÁCTAME!</button></a>
     </div>
   </footer>
 </body>
