@@ -55,10 +55,21 @@
         <a href="https://es.linkedin.com/"><img src="images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
       </div>
 
+      <p id="mas-formas">
+        ¡Haz click aquí para ver más formas de contactarme!
+      </p>
       <div id="dialog-contacto">
-        <p>
-          ¡Haz click aquí para ver más formas de contactarme!
-        </p>
+        <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
+        <dialog id="dialogo">
+          <div id="otros-cont">
+            <p>Correo electronico: daniel.gallego@iesdonana.org</p>
+          </div>
+          <div id="otros-cont">
+            <p>Dirección: Calle Borreguerros N8</p>
+          </div>
+
+          <button id="close" onclick="document.querySelector('#dialogo').close()">Cerrar</button>
+        </dialog>
       </div>
     </div>
     <div id="formulario">
