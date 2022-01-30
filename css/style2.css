@@ -382,6 +382,16 @@ div#sobremi-inferior{
   text-align: center;
 }
 
+#izquierdo div#dialog-contacto p:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 50%;
+  font-family: Oswald;
+  margin: 2em 0 -3em 0;
+  color: #FFF;
+}
+
 #cuerpo div#redes{
   width: 45em;
 
