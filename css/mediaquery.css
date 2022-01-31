@@ -95,6 +95,48 @@
 
     /* MIS PROYECTOS RESPONSIVE */
 
+    /* Efecto sobre una imagen de los proyectos en diseño responsive */
+    
+    img:hover{
+        filter: opacity(20%);
+    }
+
+    .impar {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .impar div:nth-child(2){
+        margin-top: 1em;
+    }
+
+    input#show:checked ~ div#testImpar{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2em;
+        margin-left: -15em;
+    }
+
+    .par {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+
+    .par div:nth-child(1){
+        margin-top: 2em;
+    }
+
+    input#show:checked ~ div#testPar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+
     /* SOBRE MI RESPONSIVE */
     
     div#info-personal{
