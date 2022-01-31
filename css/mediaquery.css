@@ -93,11 +93,42 @@
 
     /* HOME RESPONSIVE */
 
+    div#main-text {
+        width: 700px;
+        min-width: auto;
+        align-items: center;
+    }
+
+    div#main-text button {
+        width: 10em;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    footer div:nth-child(1){
+        margin-left: 15em;
+        margin-top: 10em;
+        margin-bottom: 2em;
+    }
+
+    footer div:nth-child(2){
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+
+    footer div:nth-child(3){
+        margin-left: -1.5em;
+        font-size: 1.2em;
+    }
+
     /* MIS PROYECTOS RESPONSIVE */
 
     /* Efecto sobre una imagen de los proyectos en diseño responsive */
-    
-    img:hover{
+    .impar img:nth-child(1):hover{
         filter: opacity(20%);
     }
 
