@@ -31,12 +31,6 @@ vemos una imagen mía con una descripción sobre mí más personal. Justo abajo,
 
 - Home (Tailwind): he intentado recrearla dentro de lo posible, si bien es cierto que he tenido muchos problemas en cuanto al comportamiento, creo que la pñagina visualmente es parecida. He usado los dos componentes que se requerían, aunque en esta página solo aparece uno, y he usando bastantes propiedades de Tailwind.
 
-** APUNTE ENTREGA 4 **
-
-Se han incluido un logo personalizado, diferentes animaciones (como las del borde del header y la del borde del texto principal), transiciones al menú de navegación, al logo y a los botones.
-
-Además, tras seguir las recomendaciones de la profesora, he realizado cambios mayores en el footer de la sección 'Home', donde ahora encontramos dos textos y el elemento 'details' con el GIF del logo. 
-
 ## PROTOTIPO<a name="id2"></a>
 [Enlace Figma] https://www.figma.com/file/T4MGOlGlJpWEi3YD5GvGEb/PORTAFOLIO?node-id=0%3A1
 
