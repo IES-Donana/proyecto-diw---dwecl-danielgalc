@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
+  <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
   <script defer src="js/burger.js"></script>
   <script defer src="js/validacion.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
@@ -24,9 +25,9 @@
 <body>
   <header>
     <div id="hamburguesa">
-      <img src="images/burger.png" alt="Icono menú hamburguesa">
+      <img src="media/images/burger.png" alt="Icono menú hamburguesa">
     </div>
-    <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div id="logo"><a href="index.html"><img src="media/images/image2vector.svg" alt=""></a></div>
     <nav>
       <ul>
         <li><a href="index.html" class="home">HOME</a></li>
@@ -49,9 +50,26 @@
       </div>
 
       <div id="redes">
-        <a href="https://github.com/"><img src="images/logo github.png" alt="Logo Github"></a>
-        <a href="https://twitter.com/"><img src="images/logo twitter.png" alt="Logo Twitter"></a>
-        <a href="https://es.linkedin.com/"><img src="images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
+        <a href="https://github.com/"><img src="media/images/logo github.png" alt="Logo Github"></a>
+        <a href="https://twitter.com/"><img src="media/images/logo twitter.png" alt="Logo Twitter"></a>
+        <a href="https://es.linkedin.com/"><img src="media/images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
+      </div>
+
+      <p id="mas-formas">
+        ¡Haz click aquí para ver más formas de contactarme!
+      </p>
+      <div id="dialog-contacto">
+        <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
+        <dialog id="dialogo">
+          <div id="otros-cont">
+            <p>Correo electronico: daniel.gallego@iesdonana.org</p>
+          </div>
+          <div id="otros-cont">
+            <p>Dirección: Calle Borreguerros N8</p>
+          </div>
+
+          <button id="close" onclick="document.querySelector('#dialogo').close()">Cerrar</button>
+        </dialog>
       </div>
     </div>
     <div id="formulario">
@@ -80,7 +98,7 @@
 
         <div class='flex flex-col relative max-w-sm w-full rounded-lg overflow-hidden mx-auto' x-data="{maximum: ''}">
           <textarea id="txtArea" cols="30" rows="10" minlength="10" maxlength="210" x-model="maximum" x-ref="maximum"
-          class="text-black block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none" disabled></textarea>
+          class="text-black block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none" required="required" disabled></textarea>
           <span class="absolute px-2 py-1 text-xs text-black bg-red-500 rounded right-2 bottom-2 mb-4" x-text="$refs.maximum.getAttribute('maxlength') - maximum.length" x-cloak></span>
         </div>
 <!--    <textarea name="texarea" id="txtArea" cols="30" rows="10" minlength="10" maxlength="1000" 

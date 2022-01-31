@@ -17,6 +17,133 @@
   outline: none;
 }
 
+body{
+  max-width: 100%;
+}
+/* VIDEO DE FONDO */
+
+#bg-video {
+  height: 99vh;
+  width: 98.8vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: opacity(85%);
+}
+
+/* ANIMACIONES Y TRANSICIONES */
+
+/* ANIMACION LOGO */
+
+@keyframes opacidad-Logo{
+  from{
+    filter: opacity(0%);
+  }
+  to{
+    filter: opacity(100%);
+  }
+}
+
+#logo {
+  animation-name: opacidad-Logo;
+  animation-duration: 7s;
+}
+
+/* ANIMACION BORDE INFERIOR HEADER */
+
+@keyframes color-Borde-Header {
+  0%{
+    border-bottom: 2px solid #66171b;
+  }
+  50%{
+    border-bottom: 2px solid white;
+  }
+  100%{
+    border-bottom: 2px solid #66171b;
+  }
+}
+
+header{
+  animation-name: color-Borde-Header;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color-Borde-Texto {
+  0%{
+    border: 0.1em solid #66171b;
+  }
+  50%{
+    border: 0.1em solid white;
+  }
+  100%{
+    border: 0.1em solid #66171b;
+  }
+}
+
+#main-text{
+  animation-name: color-Borde-Texto;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+/* TRANSICION LOGO */
+
+#logo img{
+  transition: width 2s;
+}
+
+#logo img:hover {
+  width: 8em;
+}
+
+/* TRANSICION ELEMENTOS NAV */
+
+ul li {
+  transition: filter 1s;
+  transition: all .2s ease-in-out;
+}
+
+#x {
+  transition: all .2s ease-in-out;
+}
+
+ul li:hover {
+  filter: drop-shadow(10px 5px 4px red);
+  transform: scale(1.1);
+}
+
+#x {
+  transform: scale(1.1);
+}
+
+/* TRANSICION BOTONES */
+
+#boton, #ver-mas{
+  transition: background-color .01s;
+  transition: all 0.5s ease-in-out;
+}
+
+#boton:hover, #ver-mas:hover{
+  background-color: #FFF;
+  transform: scale(1.1);
+}
+
+#boton-contacto {
+  transition: background-color .01s;
+  transition: margin-left 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#boton-contacto:hover {
+  background-color: #FFF;
+  margin-left: 0.4em;
+  transform: scale(1.1);
+}
 /* HEADER, LOGO, NAV */
 
 div#hamburguesa img{
@@ -29,18 +156,18 @@ header {
   justify-content: center;
   width: 100%;
   height: 5em;
-  background: #0A0A0A;
+  background: rgba(10, 10, 10, .8);
   font-size: 2em;
   border-bottom: 2px solid #66171b;
 }
 
 img {
-  width: 2em;
-  height: 2em;
+  width: 110px;
+  height: 110px;
 }
 
 #logo {
-  margin-right: 4em;
+  margin-right: 10%;
 }
 
 nav {
@@ -67,7 +194,7 @@ ul {
 }
 
 #x {
-  border-bottom: 2px solid #f93943;
+  border-bottom: 2px solid #a9292f;
 }
 
 li {
@@ -172,15 +299,17 @@ main{
   background-color: #FFFFFF;
 }
 
-/* FOOOTER, COLORES, FUENTES */
+/* FOOOTER */
 
 
 footer{
+  height: 8em;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #000;
-  margin: 2em 0 0 0;
+  background: rgba(10, 10, 10, .9);
+  margin: 2em 0 0em 0;
 }
 
 
@@ -196,72 +325,43 @@ footer div:nth-child(1){
   font-family: Roboto;
   font-size: 1.3em;
 
-  margin: 1em 0 0 0;
+  margin: 0em 15em 0 0;
 }
 
-#colores{
-  width: 10em;
-  min-width: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #FFFFFF;
-
-  margin: 0 0 0 3em;
-
-  font-family: Roboto;
-  
-}
-
-#red-salsa{
-  background-color: #F93943;
-}
-
-#blacks{
-  border: white 1px solid;
-}
-
-#white{
-  color: #000;
-  background-color: white;
-}
-
-
-#fuentes{
-  width: 10em;
-  min-width: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #FFFFFF;
-  
-  margin-top: 0%;
-}
-
-#fuentes h2, #rob-reg, #rob-bold{
+footer div:nth-child(2){
+  margin-left: -15em;
+  margin-right: 5em;
+  color: #a9292f;
+  font-size: 1em;
   font-family: Roboto;
 }
 
-#osw-reg{
-  font-family: Oswald;
+details{
+  display: flex;
+  justify-content: center;
 }
 
-#rob-bold{
-  font-weight: bold;
+#gif-logo {
+  margin-left: 40%;
+  width: 50px;
+  height: 50px;
 }
 
-footer div:nth-child(4){
+footer div:nth-child(3){
+  align-items: center;
+  justify-content: center;
   width: 20em;
   min-width: 20em;
   color: #FFFFFF;
   font-size: 1em;
   font-family: Roboto;
-  margin: 1em 0em 0 3em;
 }
 
 /* MIS PROYECTOS */
+
+img:hover{
+  filter: grayscale(100%);
+}
 
 h2{
   display: flex;
@@ -337,6 +437,8 @@ div#citas{
  */  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: -10em;
+  margin-left: 10%;
 }
 
 div#testImpar img{
@@ -417,4 +519,17 @@ div#testPar img{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* VIDEOS TESTIMONIOS */
+
+#vid-pomodoro  {
+  height: 300px;
+  width: 500px;
+  margin-left: 15em;
+}
+
+#vid-tienda {
+  height: 300px;
+  width: 500px;
 }
