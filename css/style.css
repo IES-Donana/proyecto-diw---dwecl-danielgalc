@@ -405,7 +405,7 @@ h2{
   margin-top: 5em;
 }
 
-#show, #show2{
+input[type=radio]{
   display: none;
 }
 
