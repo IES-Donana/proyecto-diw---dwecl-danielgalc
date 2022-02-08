@@ -405,7 +405,7 @@ h2{
   margin-top: 5em;
 }
 
-#show{
+#show, #show2{
   display: none;
 }
 
@@ -432,7 +432,7 @@ div#testImpar p, div#testPar p{
   font-style: italic;
 }
 
-div#citas{
+.citas{
 /*   border: 1px solid #FFFFFF;
  */  display: flex;
   flex-direction: column;
@@ -484,6 +484,7 @@ div#testPar {
 input#show:checked ~ div#testPar {
 	display:flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
@@ -494,7 +495,7 @@ div#testPar img{
   margin-right: 15em;
 }
 
-#testPar div#citas{
+#testPar .citas{
   margin-right: -3.5em;
 }
 
