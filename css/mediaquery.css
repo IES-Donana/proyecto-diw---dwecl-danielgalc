@@ -149,7 +149,7 @@
         margin-top: 1em;
     }
 
-    input#show:checked ~ div#testImpar{
+    div#testImpar{
         display: flex;
         flex-direction: column-reverse;
         margin-top: 2em;
@@ -166,12 +166,20 @@
         margin-top: 2em;
     }
 
-    input#show:checked ~ div#testPar{
+    div#testPar{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 2em;
+    }
+
+    #vid-pomodoro{
+        width: 450px;
+    }
+
+    #vid-tienda{
+        width: 450px;
     }
 
 
