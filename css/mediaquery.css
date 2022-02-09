@@ -191,8 +191,7 @@
     }
 
     div#info-personal #proyecto{
-        width: auto;
-        max-width: 15em;
+        width: 20em;
         height: 15em;
         max-height: 15em;
         margin-top: 2%;
