@@ -396,7 +396,7 @@ h2{
   font-family: Roboto;
 }
 
-.mostrar{
+summary{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,21 +405,20 @@ h2{
   margin-top: 5em;
 }
 
-input[type=radio]{
-  display: none;
-}
-
 div#testImpar {
-	display:none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 /*   border: #FFFFFF 1px solid;
  */}
 
-input#show:checked ~ div#testImpar {
+/* input#show:checked ~ div#testImpar {
 	display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
+} */
 
 div#testImpar p, div#testPar p{
   color: #FFF;
@@ -432,7 +431,7 @@ div#testImpar p, div#testPar p{
   font-style: italic;
 }
 
-.citas{
+div#citas{
 /*   border: 1px solid #FFFFFF;
  */  display: flex;
   flex-direction: column;
@@ -478,15 +477,16 @@ hr{
 }
 
 div#testPar {
-  display:none;
-}
-
-input#show:checked ~ div#testPar {
-	display:flex;
+  display:flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
+
+/* input#showa:checked ~ div#testPar {
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+} */
 
 div#testPar img{
   height: 12em;
@@ -495,7 +495,7 @@ div#testPar img{
   margin-right: 15em;
 }
 
-#testPar .citas{
+#testPar div#citas{
   margin-right: -3.5em;
 }
 
