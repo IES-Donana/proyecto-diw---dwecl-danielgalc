@@ -54,10 +54,10 @@
       <div id="dialog-contacto">
         <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
         <dialog id="dialogo">
-          <div id="otros-cont">
+          <div class="otros-cont">
             <p>Correo electronico: daniel.gallego@iesdonana.org</p>
           </div>
-          <div id="otros-cont">
+          <div class="otros-cont">
             <p>Dirección: Calle Borreguerros N8</p>
           </div>
 
@@ -87,12 +87,8 @@
         title='ej: "name@example.com"' required="required">
         <p id="errEmail"></p>
 
-        <label for="Mensaje">¡Escribe tu mensaje!</label>
-
-        <div class='flex flex-col relative max-w-sm w-full rounded-lg overflow-hidden mx-auto' x-data="{maximum: ''}">
-          <textarea id="txtArea" cols="30" rows="10" minlength="10" maxlength="210"
-          class="text-black block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none" required="required" disabled></textarea>
-        </div>
+        <label for="Mensaje">¡Escribe tu mensaje!</label>        
+          <textarea title="Area de Texto. Escribe tu mensaje" id="txtArea" cols="30" rows="10" minlength="10" maxlength="210" required="required" disabled></textarea>
 <!--    <textarea name="texarea" id="txtArea" cols="30" rows="10" minlength="10" maxlength="1000" 
         title='Introduce de 10 a 1000 caracteres' required="required" disabled></textarea>--> 
         <p id="errTextA"></p> 

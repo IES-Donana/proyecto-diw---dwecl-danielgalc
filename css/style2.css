@@ -481,7 +481,7 @@ div#redes img#linkedin{
   transform: scale(1.1);
 }
 
-#otros-cont{
+.otros-cont{
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
