@@ -363,7 +363,7 @@ img:hover{
   filter: grayscale(100%);
 }
 
-h1{
+#h1-proyectos{
   font-size: 24px;
   display: flex;
   color: #FFFFFF;
