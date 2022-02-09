@@ -380,7 +380,7 @@ h2{
   margin-left: 5em;
 }
 
-#proyecto{
+.proyecto{
   width: 25em;
   height: 15em;
   margin: 0em 5em;
@@ -431,7 +431,7 @@ div#testImpar p, div#testPar p{
   font-style: italic;
 }
 
-div#citas{
+.citas{
 /*   border: 1px solid #FFFFFF;
  */  display: flex;
   flex-direction: column;
@@ -495,7 +495,7 @@ div#testPar img{
   margin-right: 15em;
 }
 
-#testPar div#citas{
+#testPar .citas{
   margin-right: -3.5em;
 }
 
