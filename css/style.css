@@ -363,6 +363,16 @@ img:hover{
   filter: grayscale(100%);
 }
 
+h1{
+  font-size: 24px;
+  display: flex;
+  color: #FFFFFF;
+  font-family: Oswald;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2em;
+}
+
 h2{
   display: flex;
   color: #FFFFFF;
