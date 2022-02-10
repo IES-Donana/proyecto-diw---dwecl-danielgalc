@@ -94,9 +94,13 @@
     /* HOME RESPONSIVE */
 
     div#main-text {
-        width: 700px;
+        width: 690px;
         min-width: auto;
         align-items: center;
+    }
+
+    h1{
+        font-size: 1em;
     }
 
     div#main-text button {
@@ -111,7 +115,7 @@
 
     footer div:nth-child(1){
         margin-left: 15em;
-        margin-top: 10em;
+        margin-top: 20em;
         margin-bottom: 2em;
     }
 
@@ -121,8 +125,11 @@
     }
 
     footer div:nth-child(3){
-        margin-left: -1.5em;
         font-size: 1.2em;
+    }
+
+    #boton-contacto{
+        margin-left: 1em;
     }
 
     /* MIS PROYECTOS RESPONSIVE */
@@ -142,7 +149,7 @@
         margin-top: 1em;
     }
 
-    input#show:checked ~ div#testImpar{
+    div#testImpar{
         display: flex;
         flex-direction: column-reverse;
         margin-top: 2em;
@@ -159,12 +166,20 @@
         margin-top: 2em;
     }
 
-    input#show:checked ~ div#testPar{
+    div#testPar{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 2em;
+    }
+
+    #vid-pomodoro{
+        width: 450px;
+    }
+
+    #vid-tienda{
+        width: 450px;
     }
 
 
@@ -176,8 +191,7 @@
     }
 
     div#info-personal #proyecto{
-        width: auto;
-        max-width: 15em;
+        width: 20em;
         height: 15em;
         max-height: 15em;
         margin-top: 2%;

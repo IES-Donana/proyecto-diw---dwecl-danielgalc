@@ -245,6 +245,10 @@ main{
   margin-top: 5em;
 }
 
+#h1-maintext{
+  font-size: 60px;
+}
+
 #main-text {
   color: #FFFFFF;
   width: 25em;
@@ -363,6 +367,16 @@ img:hover{
   filter: grayscale(100%);
 }
 
+#h1-proyectos{
+  font-size: 24px;
+  display: flex;
+  color: #FFFFFF;
+  font-family: Oswald;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2em;
+}
+
 h2{
   display: flex;
   color: #FFFFFF;
@@ -380,7 +394,7 @@ h2{
   margin-left: 5em;
 }
 
-#proyecto{
+.proyecto{
   width: 25em;
   height: 15em;
   margin: 0em 5em;
@@ -396,7 +410,7 @@ h2{
   font-family: Roboto;
 }
 
-#mostrar{
+summary{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,21 +419,20 @@ h2{
   margin-top: 5em;
 }
 
-#show{
-  display: none;
-}
-
 div#testImpar {
-	display:none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 /*   border: #FFFFFF 1px solid;
  */}
 
-input#show:checked ~ div#testImpar {
+/* input#show:checked ~ div#testImpar {
 	display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
+} */
 
 div#testImpar p, div#testPar p{
   color: #FFF;
@@ -432,7 +445,7 @@ div#testImpar p, div#testPar p{
   font-style: italic;
 }
 
-div#citas{
+.citas{
 /*   border: 1px solid #FFFFFF;
  */  display: flex;
   flex-direction: column;
@@ -478,14 +491,16 @@ hr{
 }
 
 div#testPar {
-  display:none;
-}
-
-input#show:checked ~ div#testPar {
-	display:flex;
+  display:flex;
   flex-direction: row;
   justify-content: center;
 }
+
+/* input#showa:checked ~ div#testPar {
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+} */
 
 div#testPar img{
   height: 12em;
@@ -494,7 +509,7 @@ div#testPar img{
   margin-right: 15em;
 }
 
-#testPar div#citas{
+#testPar .citas{
   margin-right: -3.5em;
 }
 
