@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/burger.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaquery.css">  
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="media/video/bgvideo.mp4" type="video/mp4" />
+  </video>
+  <!-- El audio esta muted por comodidad trabajando en el proyecto, puesto que sino sonaba continuamente. -->
+  <audio autoplay muted loop>
+    <source src="media/audio/bk-sound.ogg" type="audio/mpeg">
+  </audio>
+  <header>
+    <div id="hamburguesa">
+      <picture>
+        <img src="media/images/burger.png" alt="Icono menú hamburguesa">
+      </picture>
+    </div>
+    <a href="index.html" title="Logo">
+      <div id="logo">
+        <picture>
+          <img style="filter: grayscale(0%);" src="media/images/image2vector.svg" alt="Logo">
+        </picture>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="x" class="home">HOME</a></li>
+        <li><a href="misProyectos.html" class="mis-Proy">MIS PROYECTOS</a></li>
+        <li><a href="sobreMi.html" class="sobre-Mi">SOBRE MÍ</a></li>
+        <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+  <main>
+    <div id="main-text">
+      <h1 id="h1-maintext">¡Bienvenido a mi portafolio!</h1><br> Mi nombre es Daniel Gallego, y soy diseñador web. Aquí podrás encontrar información
+      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo!
+      <a href="misProyectos.html"><button id="boton" >MIS PROYECTOS</button></a>
+    </div>
+  </main>
+  <footer>
+    <div>Muchas gracias por visitar mi perfil, lo he pasado genial creando este sitio web.
+      Aquí tienes todos los colores y fuentes que he usado durante la creación de este proyecto.
+    </div>
+    <div>
+      <details>
+        <summary >Mostrar/Esconder Logo Animado</summary>
+        <img id="gif-logo" src="media/images/animacion.gif" style="filter: grayscale(0%);" alt="GIF Logo">
+      </details>
+    </div>
+    <div>
+      Sientete totalmente libre de contactarme para cualquier cosa que necesites. ¡Espero tu mensaje!
+      <a href="contacto.html"><button id="boton-contacto">¡CONTÁCTAME!</button></a>
+    </div>
+  </footer>
+</body>
+</html>

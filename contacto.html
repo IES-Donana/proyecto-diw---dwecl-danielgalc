@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
+  <script defer src="js/burger.js"></script>
+  <script defer src="js/validacion.js"></script>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+</head>
+
+<body>
+  <header>
+    <div id="hamburguesa">
+      <img src="media/images/burger.png" alt="Icono menú hamburguesa">
+    </div>
+    <div id="logo"><a href="index.html"><img src="media/images/image2vector.svg" alt="Logo"></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home">HOME</a></li>
+        <li><a href="misProyectos.html" class="mis-Proy">MIS PROYECTOS</a></li>
+        <li><a href="sobreMi.html" class="sobre-Mi">SOBRE MÍ</a></li>
+        <li><a href="contacto.html" class="contacto" id="x">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="cuerpo">
+
+    <div id="izquierdo">
+      <div id="telefono">
+        <h1 id="h1-contacto">Daniel Gallego Calderón</h1>
+        <p>+34 601 123 456</p>
+
+        <p>Estas son mis redes sociales, donde podrás interactuar conmigo
+          y estar al tanto sobre todas las novedades sobre mí. ¡Vamos, echa un ojo!
+        </p>
+      </div>
+
+      <div id="redes">
+        <a href="https://github.com/" title="GitHub Link"><img src="media/images/logo github.png" alt="Logo Github"></a>
+        <a href="https://twitter.com/" title="Twitter Link"><img src="media/images/logo twitter.png" alt="Logo Twitter"></a>
+        <a href="https://es.linkedin.com/" title="LinkedIn"><img src="media/images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
+      </div>
+
+      <p id="mas-formas">
+        ¡Haz click aquí para ver más formas de contactarme!
+      </p>
+      <div id="dialog-contacto">
+        <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
+        <dialog id="dialogo">
+          <div class="otros-cont">
+            <p>Correo electronico: daniel.gallego@iesdonana.org</p>
+          </div>
+          <div class="otros-cont">
+            <p>Dirección: Calle Borreguerros N8</p>
+          </div>
+
+          <button id="close" onclick="document.querySelector('#dialogo').close()">Cerrar</button>
+        </dialog>
+      </div>
+    </div>
+    <div id="formulario">
+      <p>Sientete totalmente libre de enviarme un mensaje, 
+        ya sea para comentarme cualquier duda o charlar sobre algún tema
+        que te apetezca, desde alguna idea de proyecto hasta
+        cual es tu película favorita de Star Wars.
+      </p>
+      <form id="form1" action="validar.php">
+        <label for="Nombre">Nombre</label>
+        <input class="text-black" type="text" id="nombre" minlength="2" maxlength="16" pattern="[A-Z a-z]{2,16}" 
+        required="required" title="Introduce de 2 a 16 caracteres no numericos">
+        <p id="errNombre"></p>
+
+        <label for="Apellidos">Apellidos</label>
+        <input class="text-black" type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Z a-z]{2,50}" 
+        required="required" title="Introduce de 2 a 50 caracteres no numericos">
+        <p id="errApellido"></p>
+
+        <label for="Correo">Correo electrónico</label>
+        <input class="text-black" type="email" id="correo"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
+        title='ej: "name@example.com"' required="required">
+        <p id="errEmail"></p>
+
+        <label for="Mensaje">¡Escribe tu mensaje!</label>        
+          <textarea title="Area de Texto. Escribe tu mensaje" id="txtArea" cols="30" rows="10" minlength="10" maxlength="210" required="required" disabled></textarea>
+        <p id="errTextA"></p> 
+
+        <button id="boton" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
