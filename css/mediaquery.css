@@ -2,6 +2,7 @@
     header{
         width: 99vw;
         min-width: 99vw;
+        margin-left: 0.35em;
     }
 
     body{
@@ -94,7 +95,8 @@
     /* HOME RESPONSIVE */
 
     div#main-text {
-        width: 690px;
+        width: 7em;
+        margin-left: 0.5em;
         min-width: auto;
         align-items: center;
     }
@@ -103,8 +105,17 @@
         font-size: 1em;
     }
 
+    #h1-maintext{
+        font-size: 1em;
+    }
+
+    #text-maintext{
+        font-size: 0.9em;
+        font-family: Roboto;
+    }
+
     div#main-text button {
-        width: 10em;
+        width: 7em;
     }
 
     footer{
