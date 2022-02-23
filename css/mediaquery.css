@@ -96,7 +96,7 @@
 
     div#main-text {
         width: 7em;
-        margin-left: 0.5em;
+        margin-left: 0.2em;
         min-width: auto;
         align-items: center;
     }
@@ -121,26 +121,28 @@
     footer{
         display: flex;
         flex-direction: column;
-        margin-top: 1em;
+        margin-top: 12em;
+        width: 5em;
     }
 
     footer div:nth-child(1){
-        margin-left: 15em;
-        margin-top: 20em;
-        margin-bottom: 2em;
+        margin-left: 33.5em;
+        font-size: 1em;
     }
 
     footer div:nth-child(2){
-        margin-left: 2em;
+        margin-left: 23.5em;  
         margin-bottom: 2em;
+        margin-top: -4em;
     }
 
     footer div:nth-child(3){
-        font-size: 1.2em;
+        margin-left: 20em;  
+
+        font-size: 1em;
     }
 
     #boton-contacto{
-        margin-left: 1em;
     }
 
     /* MIS PROYECTOS RESPONSIVE */
