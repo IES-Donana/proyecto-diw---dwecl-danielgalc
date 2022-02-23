@@ -343,12 +343,17 @@ footer div:nth-child(2){
 details{
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 #gif-logo {
   margin-left: 40%;
   width: 50px;
   height: 50px;
+}
+
+#parrafo-footer{
+  font-size: 11px;
 }
 
 footer div:nth-child(3){
