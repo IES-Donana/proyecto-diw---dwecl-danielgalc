@@ -161,6 +161,25 @@ header {
   border-bottom: 2px solid #66171b;
 }
 
+/* Buscador no funcional */
+
+#buscador {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  margin: 10em 3em 0 85em;
+  border: 1px solid #a9292f;
+}
+
+#search {
+  position: absolute;
+  margin: 10em 3em 0 95em;
+  height: 20px;
+  border: 1px solid #a9292f;
+  background-color: #F93943;
+  font-family: Oswald;
+}
+
 /* Header Fixed Mis Proyectos */
 
 #fixed-header {
@@ -385,11 +404,20 @@ footer div:nth-child(3){
 /* MIS PROYECTOS */
 
 #breadcrumbs {
+  font-family: Oswald;
   padding-top: 11em;
   color: #a9292f;
   display: flex;
   justify-content: center;
   margin-bottom: -9em;
+}
+
+#breadcrumbs a:active{
+  color: red;
+}
+
+#breadcrumbs a:visited{
+  color: white;
 }
 
 img:hover{

@@ -129,11 +129,39 @@ ul li:hover {
 /* BREADCRUMBS */
 
 #breadcrumbs {
+  font-family: Oswald;
   margin-top: 1em;
   color: #a9292f;
   display: flex;
   justify-content: center;
   z-index: 50;
+}
+
+#breadcrumbs a:active{
+  color: red;
+}
+
+#breadcrumbs a:visited{
+  color: white;
+}
+
+/* Buscador no funcional */
+
+#buscador {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  margin: 10em 3em 0 85em;
+  border: 1px solid #a9292f;
+}
+
+#search {
+  position: absolute;
+  margin: 10em 3em 0 95em;
+  height: 20px;
+  border: 1px solid #a9292f;
+  background-color: #F93943;
+  font-family: Oswald;
 }
 
 /* HEADER, LOGO, NAV */
