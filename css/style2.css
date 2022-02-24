@@ -126,6 +126,15 @@ ul li:hover {
   transform: scale(1.1);
 }
 
+/* BREADCRUMBS */
+
+#breadcrumbs {
+  margin-top: 1em;
+  color: #a9292f;
+  display: flex;
+  justify-content: center;
+}
+
 /* HEADER, LOGO, NAV */
 
 div#hamburguesa img{

@@ -164,7 +164,6 @@ header {
 /* Header Fixed Mis Proyectos */
 
 #fixed-header {
-  margin-top: -70px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -384,6 +383,14 @@ footer div:nth-child(3){
 }
 
 /* MIS PROYECTOS */
+
+#breadcrumbs {
+  padding-top: 11em;
+  color: #a9292f;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -9em;
+}
 
 img:hover{
   filter: grayscale(100%);
