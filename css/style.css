@@ -161,6 +161,23 @@ header {
   border-bottom: 2px solid #66171b;
 }
 
+/* Header Fixed Mis Proyectos */
+
+#fixed-header {
+  margin-top: -70px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5em;
+  background: rgba(10, 10, 10);
+  font-size: 2em;
+  border-bottom: 2px solid #66171b;
+  z-index: 2;
+}
+
+
 img {
   width: 110px;
   height: 110px;
@@ -379,6 +396,7 @@ img:hover{
   font-family: Oswald;
   justify-content: center;
   align-self: center;
+  padding-top: 5em;
   margin-top: 2em;
 }
 
