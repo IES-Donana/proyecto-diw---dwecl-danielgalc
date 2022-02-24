@@ -1,4 +1,7 @@
-@media print {    
+@media print {
+
+    /* HOME PRINT */
+    
     main{
         margin-left: 5em;
         width: 99vw;
@@ -21,7 +24,90 @@
     footer{
         font-size: 0.8em;
     }
-  }
+
+    /* MIS PROYECTOS PRINT */
+
+    .impar, .par{
+        width: 99vw;
+    }
+
+    .proyecto {
+        width: 350px;
+        height:250px;
+    }
+
+    .impar picture{
+        margin-left: 7em;
+    }
+
+    .par div{
+        margin-left: 8em;
+    }
+
+    #vMas {
+        display: none;
+    }
+
+    /* SOBRE MI PRINT */
+
+    #info-personal {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    h2{
+        margin-top: 22em;
+    }
+
+    div#info-pro #circulo1, div#info-pro #circulo2, div#info-pro #circulo3{
+        max-width: 7em;
+        max-height: 7em;
+    }
+
+    div#info-pro #circulo2{
+        margin-left: -19.8em;
+        margin-top: 2em;
+    }
+
+    div#info-pro #circulo3{
+        margin-left: -19.8em;
+        margin-top: 2em;
+    }
+
+
+
+    div#info-pro{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+        margin-top: 5em;
+    }
+
+    div#parrafos{
+        display: flex;
+        flex-direction: column;
+        margin-top: -35em;
+        margin-left: 30em;
+    }
+
+    div#parrafos p:nth-child(1){
+        margin-top: 10.5em;
+        margin-left: -5em;
+    }
+
+    div#parrafos p:nth-child(2){
+        margin-top: 4.5em;
+        margin-left: -26em;
+    }
+
+    div#parrafos p:nth-child(3){
+        margin-top: 4em;
+        margin-left: -25em;
+    }
+
+    /* CONTACTO PRINT */
+}
 
 
 @media screen and (max-width: 700px) {
