@@ -1,5 +1,9 @@
 @media print {
 
+    html body div{
+        color: black !important;
+    }
+
     /* HOME PRINT */
     
     main{
