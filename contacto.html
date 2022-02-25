@@ -28,14 +28,14 @@
       </ul>
     </nav>
 
-    <label for="site-search"></label>
-    <input id="buscador" type="search" id="site-search" name="buscador"
+    <label for="buscador"></label>
+    <input id="buscador" type="search" name="buscador"
            title="buscador"aria-label="Search through site content">
 
   <button id="search">Buscar</button>
   </header>
   <div id="breadcrumbs">
-    <span><a href="index.html" title="Migas de Pan contacto"> Inicio </a> > Contacto </a> </span>
+    <span><a href="index.html" title="Migas de Pan contacto"> Inicio </a> > Contacto </span>
   </div>
   <div id="cuerpo">
 
@@ -50,9 +50,9 @@
       </div>
 
       <div id="redes">
-        <a href="https://github.com/" title="GitHub Link"><img src="media/images/logo github.png" alt="Logo Github"></a>
-        <a href="https://twitter.com/" title="Twitter Link"><img src="media/images/logo twitter.png" alt="Logo Twitter"></a>
-        <a href="https://es.linkedin.com/" title="LinkedIn"><img src="media/images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
+        <a href="https://github.com/" title="GitHub Link"><img src="media/images/logo-github.png" alt="Logo Github"></a>
+        <a href="https://twitter.com/" title="Twitter Link"><img src="media/images/logo-twitter.png" alt="Logo Twitter"></a>
+        <a href="https://es.linkedin.com/" title="LinkedIn"><img src="media/images/logo-linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
       </div>
 
       <p id="mas-formas">
@@ -79,22 +79,22 @@
         cual es tu película favorita de Star Wars.
       </p>
       <form id="form1" action="validar.php">
-        <label for="Nombre">Nombre</label>
+        <label for="nombre">Nombre</label>
         <input class="text-black" type="text" id="nombre" minlength="2" maxlength="16" pattern="[A-Z a-z]{2,16}" 
         required="required" title="Introduce de 2 a 16 caracteres no numericos">
         <p id="errNombre"></p>
 
-        <label for="Apellidos">Apellidos</label>
+        <label for="apellidos">Apellidos</label>
         <input class="text-black" type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Z a-z]{2,50}" 
         required="required" title="Introduce de 2 a 50 caracteres no numericos">
         <p id="errApellido"></p>
 
-        <label for="Correo">Correo electrónico</label>
+        <label for="correo">Correo electrónico</label>
         <input class="text-black" type="email" id="correo"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
         title='ej: "name@example.com"' required="required">
         <p id="errEmail"></p>
 
-        <label for="Mensaje">¡Escribe tu mensaje!</label>        
+        <label for="txtArea">¡Escribe tu mensaje!</label>        
           <textarea title="Area de Texto. Escribe tu mensaje" id="txtArea" cols="30" rows="10" minlength="10" maxlength="210" required="required" disabled></textarea>
         <p id="errTextA"></p> 
 
