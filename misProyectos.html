@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Proyectos</title>
+  <title>Daniel Gallego - Mis Proyectos</title>
   <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
   <script defer src="js/burger.js"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="fixed-header">
     <div id="hamburguesa">
       <img src="media/images/burger.png" alt="Icono menú hamburguesa">
     </div>
@@ -27,7 +27,16 @@
         <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
       </ul>
     </nav>
+
+    <label for="buscador"></label>
+    <input id="buscador" type="search" name="buscador"
+           title="buscador" aria-label="Search through site content">
+
+  <button id="search">Buscar</button>
   </header>
+  <div id="breadcrumbs">
+  <span><a href="index.html" title="Migas de Pan Mis Proyectos">Inicio</a> > Mis Proyectos</span>
+  </div>
   <h1 id="h1-proyectos">PROYECTO 1: CONTADOR POMODORO</h1>
   <div class="impar">
     <picture>

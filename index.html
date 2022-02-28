@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home</title>
+  <title>Daniel Gallego - Home</title>
   <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="js/burger.js"></script>
@@ -40,12 +40,17 @@
       </ul>
       
     </nav>
+
+    <label for="buscador"></label>
+      <input id="buscador" type="search" name="buscador"
+             title="buscador" aria-label="Search through site content">    
+    <button id="search">Buscar</button>
   </header>
   <main>
     <div id="main-text">
-      <h1 id="h1-maintext">¡Bienvenido a mi portafolio!</h1><br> Mi nombre es Daniel Gallego, y soy diseñador web. Aquí podrás encontrar información
-      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo!
-      <a href="misProyectos.html"><button id="boton" >MIS PROYECTOS</button></a>
+      <h1 id="h1-maintext">¡Bienvenido a mi portafolio!</h1><br><div id="text-maintext"> Mi nombre es Daniel Gallego, y soy diseñador web. Aquí podrás encontrar información
+      sobre mí, mis proyectos, y las formas de contactarme. ¡Echa un ojo! </div>
+      <button type="button" id="boton" onclick="window.location.href='misProyectos.html'">MIS PROYECTOS</button>
     </div>
   </main>
   <footer>
@@ -57,11 +62,36 @@
         <summary >Mostrar/Esconder Logo Animado</summary>
         <img id="gif-logo" src="media/images/animacion.gif" style="filter: grayscale(0%);" alt="GIF Logo">
       </details>
+
       <p id="parrafo-footer">Editado por última vez por Daniel Gallego el día 28 de febrero de 2022.</p>
+
+      <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+         title="Explicación del Nivel Doble-A de Conformidad"
+      >
+        <img class="logo-conformidad" 
+          src="http://www.w3.org/WAI/wcag1AA"
+          alt="Icono de conformidad con el Nivel Doble-A, 
+               de las Directrices de Accesibilidad para el 
+               Contenido Web 1.0 del W3C-WAI"
+      /></a>
+
+      <a
+      href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+      title="Explicación del Nivel Doble-A de 
+      Conformidad"
+      >
+      <img class="logo-conformidad"
+      src="http://www.w3.org/WAI/wcag1AA-blue"
+      alt="Icono de conformidad con el Nivel Doble-A, 
+          de las Directrices de Accesibilidad para el 
+          Contenido Web 1.0 del W3C-WAI"
+      /></a>
+
+      
     </div>
     <div>
       Sientete totalmente libre de contactarme para cualquier cosa que necesites. ¡Espero tu mensaje!
-      <a href="contacto.html"><button id="boton-contacto">¡CONTÁCTAME!</button></a>
+      <button type="button" id="boton-contacto" onclick="window.location.href='contacto.html'">¡CONTÁCTAME!</button>
     </div>
   </footer>
 </body>

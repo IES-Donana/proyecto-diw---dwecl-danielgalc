@@ -126,6 +126,44 @@ ul li:hover {
   transform: scale(1.1);
 }
 
+/* BREADCRUMBS */
+
+#breadcrumbs {
+  font-family: Oswald;
+  margin-top: 1em;
+  color: #a9292f;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+}
+
+#breadcrumbs a:active{
+  color: red;
+}
+
+#breadcrumbs a:visited{
+  color: white;
+}
+
+/* Buscador no funcional */
+
+#buscador {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  margin: 10em 3em 0 85em;
+  border: 1px solid #a9292f;
+}
+
+#search {
+  position: absolute;
+  margin: 10em 3em 0 95em;
+  height: 20px;
+  border: 1px solid #a9292f;
+  background-color: #F93943;
+  font-family: Oswald;
+}
+
 /* HEADER, LOGO, NAV */
 
 div#hamburguesa img{
@@ -357,8 +395,9 @@ div#sobremi-inferior{
 
 /* CONTACTO */
 #cuerpo div#izquierdo{
-  margin: -18em 0 0 -30em;
+  margin: 0 0 15.3em -30em;
   position: fixed;
+  height: 45%;
 }
 
 #h1-contacto{
@@ -379,10 +418,13 @@ div#sobremi-inferior{
   min-width: 50%;
   font-family: Oswald;
   color: #F93943;
+/*   border: 1px solid yellow;
+ */ 
 }
 
 #cuerpo div#telefono p:nth-child(1){
   font-size: 3.5em;
+  margin-bottom: -5em;
 }
 
 #cuerpo div#telefono p:nth-child(2){
@@ -394,7 +436,7 @@ div#sobremi-inferior{
 #cuerpo div#telefono p:nth-child(3){
   display: flex;
   width: 55%;
-  margin: 1em 0 -3em 0;
+  margin: 0em 0 -14em 0;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -408,7 +450,7 @@ div#sobremi-inferior{
   justify-content: space-evenly;
   align-items: center;
 
-  margin-top: 5em;
+  margin-top: 15em;
 }
 
 #cuerpo div#redes img{
